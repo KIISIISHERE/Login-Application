@@ -5,15 +5,17 @@
         <title>Signup</title>
     </head>
     <body>
+        <div class="signup">
         <h2>SignUp for an account</h2>
         {% if error %}
             <p class="error">{{ error }}</p>
-        {% end if %}
+        {% endif %}
         <form method="post">
             <input type="text" name="username" placeholder="Enter your Username" required>
             <input type="password" name="password" placeholder="Enter your Password" required minlegnth="8">
             <button type="submit">Register</button>
         </form>
         <p><a href="/login">Back to Login</a></p>
+        </div>
     </body>
 </html>
